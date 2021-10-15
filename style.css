@@ -8,8 +8,20 @@ body {
 .Name-heading{
     color: blue;
     font-family: 'Abril Fatface', cursive;
+    position: relative; /*top-right-bottom-left*/
+    animation: Name-heading;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+
 }
 
+@keyframes Name-heading {
+    0% {top: -200px;}
+    100% {top: 0;}
+    
+}
 
 .ingredients {
     border: 2px solid black;
@@ -18,19 +30,51 @@ body {
     padding-top: 50px;
     padding-bottom: 50px;
     font-family: 'Inconsolata', monospace;
+    position: relative; 
+    animation: ingredients-table;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes ingredients {
+    0% {right: -1000px;}
+    100% { right: 0;}
 }
 
 .ingredients-table{
     border: 2px solid black;
     margin: 0 auto;
+    position: relative; 
+    animation: ingredients-table;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ingredients-table {
+    0% {bottom: -1000px;}
+    100% { bottom: 0;}
 }
 
 .instructions {
     border: 2px solid black;
     width: 15%;
     margin: 0 auto;
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Inconsolata', monospace;position: relative; 
+    animation: instructions;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
 }
+
+@keyframes instructions {
+    0% {right: -1000px;}
+    100% { right: 0;}
+
+}
+
 
 .instructions ol {
     border: 2px solid black;
@@ -40,4 +84,13 @@ body {
 .img {
     border-radius: 50%;
     width: 30%;
+    position: relative;
+    animation: img;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
+
+@keyframes img {
+    0% {left: -1000px;}
+    100% {left: 0;}
